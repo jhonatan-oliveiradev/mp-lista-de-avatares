@@ -23,11 +23,11 @@ export default function Home() {
 		useState<AvatarBorderVariants["border"]>("default");
 
 	return (
-		<main className="flex min-h-[80vh] flex-col items-center max-w-7xl mx-auto px-2 pt-2">
+		<main className="flex min-h-[90vh] flex-col items-center max-w-7xl mx-auto px-2 pt-2">
 			<div className="my-2 flex gap-12 w-full">
 				<div className="flex items-start justify-center flex-col">
 					<h2 className="text-xl font-bold mb-4">Configure o tipo de borda:</h2>
-					<div className="flex items-center justify-center gap-4">
+					<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 						<Select
 							onValueChange={(size) => setSize(size as AvatarVariants["size"])}
 						>
