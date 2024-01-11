@@ -70,7 +70,7 @@ export default function Home() {
 							username={user.username}
 							fallbackText={user.fallbackText}
 							imgUrl={user.imgUrl}
-							size={size}
+							size={size || "default"}
 							border={border}
 						/>
 					))}
